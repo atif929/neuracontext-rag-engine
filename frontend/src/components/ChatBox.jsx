@@ -1,20 +1,20 @@
-import { useState, useRef, useEffect } from "react";
+  import { useState, useRef, useEffect } from "react";
 
-const API_BASE = "https://neuracontext-rag-engine-production.up.railway.app/";
+  const API_BASE = "https://neuracontext-rag-engine-production.up.railway.app";
 
-function Message({ role, text }) {
-  const isUser = role === "user";
-  return (
-    <div className={`flex ${isUser ? "justify-end" : "justify-start"} mb-3`}>
-      <div
-        className={`max-w-[75%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed whitespace-pre-wrap ${
-          isUser
-            ? "bg-blue-600 text-white rounded-br-sm"
-            : "bg-gray-100 text-gray-800 rounded-bl-sm"
-        }`}
-      >
-        {text}
-      </div>
+  function Message({ role, text }) {
+    const isUser = role === "user";
+    return (
+      <div className={`flex ${isUser ? "justify-end" : "justify-start"} mb-3`}>
+        <div
+          className={`max-w-[75%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed whitespace-pre-wrap ${
+            isUser
+              ? "bg-blue-600 text-white rounded-br-sm"
+              : "bg-gray-100 text-gray-800 rounded-bl-sm"
+          }`}
+        >
+          {text}
+        </div>
     </div>
   );
 }

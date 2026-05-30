@@ -14,7 +14,7 @@ app = FastAPI(title="AI Knowledge Assistant", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Vite default dev port
+    allow_origins=["*"],  # Vite default dev port
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
