@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://neuracontext-rag-engine-production.up.railway.app/";
 
 function Message({ role, text }) {
   const isUser = role === "user";
