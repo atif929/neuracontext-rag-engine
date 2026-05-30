@@ -1,0 +1,7 @@
+backend/.env
+backend/vector_store/
+data/documents/
+__pycache__/
+*.pyc
+node_modules/
+dist/
