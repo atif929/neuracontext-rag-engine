@@ -20,7 +20,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-UPLOAD_DIR = "../data/documents"
+UPLOAD_DIR = "/tmp/documents"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 # ---------------------------------------------------------------------------
