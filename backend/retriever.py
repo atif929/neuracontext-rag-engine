@@ -7,8 +7,8 @@ from rank_bm25 import BM25Okapi
 from sentence_transformers import SentenceTransformer
 
 MODEL_NAME = "all-MiniLM-L6-v2"
-INDEX_PATH = "/tmp/vector_store/faiss_index"
-CHUNKS_PATH = "/tmp/vector_store/faiss_index_chunks.json"
+INDEX_PATH = "vector_store/faiss_index"
+CHUNKS_PATH = "vector_store/faiss_index_chunks.json"
 
 model = SentenceTransformer(MODEL_NAME)
 

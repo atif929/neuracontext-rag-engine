@@ -1,6 +1,6 @@
   import { useState, useRef, useEffect } from "react";
 
-const API_BASE = "https://atif-siyal-neuracontext-rag-engine.hf.space";
+const API_BASE = "http://localhost:8000";
 
 
   function Message({ role, text }) {
